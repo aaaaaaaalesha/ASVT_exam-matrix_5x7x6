@@ -1,0 +1,151 @@
+004-005 @READ_PACKED_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+004-005 @READ_PROGRAM_MEMORY8.P3
+004-005 @WRITE_PACKED_MEMORY.P4
+006-007 @READ_PACKED_MEMORY.P1
+006-007 @WRITE_PACKED_MEMORY.P2
+020-026 addresses
+027-02B dots_rows
+02C-062 numbers
+063-06F,0A0-0CE indicators
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+0CF-0E6 input_arr
+0E7-0E8 @sprintf_string
+0E9     MAIN.mode_number
+0EA     MAIN.i
+0EB     MAIN.i
+0EC     MAIN.k
+0ED     MAIN.i
+111.6   C1OUT
+120     sycle_shift_line.first_column
+120-121 watch.minute
+120     MAIN.@SCRATCH1
+121     sycle_shift_line.i
+121     MAIN.@SCRATCH2
+122-123 watch.second1
+122     sycle_shift_line.i
+122     MAIN.@SCRATCH3
+122     @PSTRINGC7_687.@SCRATCH1
+123     sycle_shift_line.i
+123     sym_to_number_index.sym
+123     MAIN.@SCRATCH4
+123     @PSTRINGC7_687.@SCRATCH2
+124     sycle_shift_line.i
+124-125 watch.second2
+124     @GETCH_1_.@SCRATCH1
+124     @PSTRINGC7_687.@SCRATCH3
+125     sycle_shift_line.i
+125     @PUTCHAR_1_.P1
+126-127 @MUL1616.P1
+126     sycle_shift_line.i
+126     write_expanders.top_expander_value
+126     watch.@SCRATCH1
+127     sycle_shift_line.i
+127     write_expanders.i
+127     watch.@SCRATCH2
+128     sycle_shift_line.i
+128     set_indicator.ind_n
+128-129 @MUL1616.P1
+128     write_expanders.j
+129-12A set_indicator.ind_value
+129     sycle_shift_line.i
+12A     sycle_shift_line.i
+12A     @MUL1616.@SCRATCH1
+12B     sycle_shift_line.i
+12B     @delay_ms1.P1
+12B     set_indicator.i
+12B     write_expanders.@SCRATCH1
+12C     sycle_shift_line.i
+12C     write_expanders.@SCRATCH2
+12D     expander_write.i2c_addr
+12D     write_expanders.@SCRATCH3
+12E     @MUL88.P1
+12E     expander_write.value
+12E     set_indicator.@SCRATCH1
+12E     sycle_shift_line.@SCRATCH1
+12F     @I2C_WRITEU_129.P1
+12F     @MUL88.P2
+12F     set_indicator.@SCRATCH2
+12F     sycle_shift_line.@SCRATCH2
+130     set_indicator.@SCRATCH3
+130     sycle_shift_line.@SCRATCH3
+191-192 @READ_PROGRAM_MEMORY8.P1
+191-192 @WRITE_PROGRAM_MEMORY8.P2
+291     CCP_1
+291     CCP_1_LOW
+292     CCP_1_HIGH
+
+ROM Allocation:
+000003  @const741.call
+000014  @const746.call
+00001D  @const747.call
+000024  @const748.call
+000029  @const749.call
+00002D  @const751.call
+000034  @const753.call
+000045  @const754.call
+00004F  @const756.call
+00005E  @const758.call
+000068  @const760.call
+000073  @const761.call
+000088  @PUTCHAR_1_
+0000AB  @PSTRINGC7_687
+0000F9  @GETCH_1_
+000121  sym_to_number_index
+000162  @goto35305
+000171  @MUL1616
+000188  @MUL88
+0001AF  set_indicator
+0001DA  @delay_ms1
+0001F3  @I2C_WRITEU_129
+000206  expander_write
+00021A  write_expanders
+000262  sycle_shift_line
+00042F  watch
+000800  @cinit1
+000800  MAIN
+00081B  @cinit2
+
+Project Directory:
+    C:\Users\Алексей\OneDrive\Рабочий стол\exam\css_1840\
+
+Project Files:
+    main.c                                                  [25-янв-23 14:03  CRC=5209D437]
+    main.h                                                  [25-янв-23 05:48  CRC=D872A938]
+    ..\..\..\..\..\..\Program Files (x86)\PICCDEMO\Devices\12F1840.h [23-окт-22 11:54  CRC=8850D148]
+
+Source signature=3B1E1FFF
+Program memory checksum=0000
+Hex file CRC=C556
+
+Units:
+    C:\Users\Алексей\OneDrive\Рабочий стол\exam\css_1840\main (main)
+
+Compiler Settings:
+    Processor:      PIC12F1840
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Enhanced 16:    Yes
+    Compile Mode:   CCS5
+
+Compiler operating in Evaluation Mode
+To obtain a fully enabled compiler visit www.ccsinfo.com/products
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
